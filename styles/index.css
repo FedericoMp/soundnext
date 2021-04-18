@@ -263,3 +263,41 @@ a:active {
     }
 }
 /* -------------------------------------------  */
+
+/* ------------ Social Links ------------ */
+.social-links {
+    width: 100%;
+    display: flex;
+    color: var(--white);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark-grey);
+}
+.social-headline {
+    margin: 50px 0;
+    text-transform: uppercase;
+    font-family: 'montserrat_semibold', sans-serif;
+}
+.light-txt-mo {
+    margin: 0 6px;
+    font-family: 'montserrat_light', sans-serif;
+}
+.social-container {
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+@media only screen and (min-width: 960px) {
+    .social-container {
+        flex-direction: row;
+    }
+}
+.img-social {
+ width: 333px;
+ height: 330px;;   
+}
+.img-social.twitter:hover {
+    cursor: pointer;
+}
+/* -------------------------------------  */
