@@ -1,0 +1,89 @@
+/* ------------ Artist Cover ------------ */
+.bg-cover {
+    background-size: cover;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/img/artist_cover/cover_left.jpg');
+}
+.bg-cover::before {
+    left: 8px;
+    bottom: 50%;
+    width: 140px;
+    height: 245px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate(0, 50%);
+    background-image: url('../assets/img/extras/playoutline.png');
+}
+.bg-cover::after {
+    right: 100px;
+    bottom: 80px;
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/img/extras/cross-small.png');
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+    .bg-cover::before,
+    .bg-cover::after {
+        content: '';
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .bg-cover::before,
+    .bg-cover::after {
+        content: '';
+    }
+}
+.cover-container {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+@media only screen and (max-width: 767px) {    
+    .cover-container {
+        height: 600px;
+    }
+}
+.cover-logo {
+    width: 114px;
+    height: 17px;
+    object-fit: cover;
+}
+.cover-headline,
+.cover-name {
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: 'montserrat_semibold', sans-serif;
+}
+.cover-name {
+    font-size: xx-large;
+}
+.cover-text,
+a.cover-link {
+    font-size: small;
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: 'montserrat_light', sans-serif;
+}
+a.cover-link {
+    text-decoration: underline;
+}
+.img-full,
+.img-half {
+    object-fit: cover;
+}
+.img-full {
+    width: 100%;
+}
+.img-half {
+    width: 50%;
+}
+/* ------------------------------------- */

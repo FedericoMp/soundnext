@@ -1,0 +1,216 @@
+/* ------------- Slider & Promo ------------- */
+
+#sliderPromo::before {
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    position: absolute;
+    color: var(--white);
+    letter-spacing: 5px;
+    content: 'Soundnext';
+    text-transform: uppercase;
+    transform: translate(-50%, 30px);
+    transition: opacity .5s .25s ease-out;
+    font-family: 'montserrat_semibold', sans-serif;
+}
+
+.carousel-caption {
+  bottom: 10rem;
+  z-index: 10;
+}
+.carousel-item {
+  height: 50rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 50rem;
+}
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+.carousel-indicators > li.active::before {
+    z-index: 1;
+    top: -10px;
+    content: '';
+    width: 33px;
+    height: 3px;
+    display: flex;
+    position: absolute;
+    background-color: var(--blue-txt);
+}
+
+.promo-one,
+.promo-two,
+.promo-three {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.promo-one-headline {
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 80px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-family: 'montserrat_semibold', sans-serif;
+}
+@media only screen and (min-width: 560px) {
+    .promo-one-headline {
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+    }
+}
+.promo-one-subheadline {
+    margin-left: 80px;
+    font-size: 15px!important;
+    text-transform: uppercase;
+    font-family: 'montserrat_light', sans-serif;
+}
+.promo-one-text {
+    font-size: small;
+    max-width: 300px;
+    margin-left: 80px;
+}
+.promo-one-cross::before {
+    content: '';
+    left: 0;
+    top: 175px;
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    background-size: cover;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/img/extras/cross-small.png');
+}
+@media only screen and (min-width: 945px) {
+    .promo-one-cross::before {
+        top: 125px; 
+    }
+}
+
+.promo-two-headline,
+.promo-two-headline.second {
+    text-align: right;
+    font-size: 1.8rem;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-family: 'montserrat_light', sans-serif;
+}
+.promo-two-headline.second {
+    margin-bottom: 80px;
+    font-family: 'opensans_light', sans-serif;
+}
+@media only screen and (min-width: 560px) {
+    .promo-two-headline,
+    .promo-two-headline.second {
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+    }
+}
+.promo-two-subheadline {
+    font-size: 15px!important;
+    text-transform: uppercase;
+    font-family: 'montserrat_light', sans-serif;
+}
+.promo-two-text {
+    font-size: small;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+a.promo-two-link {
+    color: var(--blue-txt);
+    text-transform: uppercase;
+}
+.promo-two-price {
+    font-family: 'opensans_light', sans-serif;
+}
+.promo-two-number {
+    font-size: xxx-large;
+}
+.promo-two-pass {
+    margin-left: 15px;
+    font-size: x-medium;
+    text-transform: uppercase;
+    color: var(--dark-blue-txt);
+}
+.promo-two-cross::before {
+    content: '';
+    right: 0;
+    bottom: -75px;
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    background-size: cover;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/img/extras/cross-small.png');
+}
+
+.promo-three-headline {
+    font-size: 1.8rem;
+    margin-bottom: 80px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-family: 'montserrat_light', sans-serif;
+}
+@media only screen and (min-width: 560px) {
+    .promo-three-headline {
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+    }
+}
+.promo-three-subheadline {
+    margin-left: 80px;
+    font-size: 15px!important;
+    text-transform: uppercase;
+    font-family: 'montserrat_light', sans-serif;
+}
+.promo-three-text {
+    font-size: small;
+    max-width: 300px;
+    margin-left: 80px;
+    margin-bottom: 15px;
+}
+a.promo-three-link {
+    margin-left: 80px;
+    color: var(--blue-txt);
+    text-transform: uppercase;
+}
+@media only screen and (min-width: 720px) {
+    .promo-three-subheadline,
+    .promo-three-text,
+    a.promo-three-link {
+        margin-left: 180px;
+    }
+}
+@media only screen and (min-width: 960px) {
+    .promo-three-subheadline,
+    .promo-three-text,
+    a.promo-three-link {
+        margin-left: 280px;
+    }
+}
+.promo-three-cross::before {
+    content: '';
+    left: 0;
+    bottom: -75px;
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/img/extras/cross-small.png');
+}
+/* ----------------------------------------  */

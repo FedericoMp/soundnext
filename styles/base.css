@@ -1,0 +1,91 @@
+/* ------------- Media Queries -------------
+    small-size: 560px;
+    medium-size: 720px;
+    large-size: 960px;
+    xlarge-size: 1200px;
+---------------------------------------  */
+
+/* ----------------- Font Load ----------------- */
+/* Silkscreen Normal */
+@font-face {
+    font-family: 'silkscreen';
+    src: url('../assets/fonts/slkscr.woff2') format('woff2'),
+         url('../assets/fonts/slkscr.woff') format('woff'),
+         url('../assets/fonts/slkscr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Montserrat Light */
+@font-face {
+    font-family: 'montserrat_light';
+    src: url('../assets/fonts/montserrat-light.woff2') format('woff2'),
+         url('../assets/fonts/montserrat-light.woff') format('woff'),
+         url('../assets/fonts/montserrat-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Montserrat Semibold */
+@font-face {
+    font-family: 'montserrat_semibold';
+    src: url('../assets/fonts/montserrat-semibold.woff2') format('woff2'),
+         url('../assets/fonts/montserrat-semibold.woff') format('woff'),
+         url('../assets/fonts/montserrat-semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Open Sans Regular */
+@font-face {
+    font-family: 'opensans_regular';
+    src: url('../assets/fonts/opensans-regular.woff2') format('woff2'),
+         url('../assets/fonts/opensans-regular.woff') format('woff'),
+         url('../assets/fonts/opensans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Open Sans Light */
+@font-face {
+    font-family: 'opensans_light';
+    src: url('../assets/fonts/opensans-light.woff2') format('woff2'),
+         url('../assets/fonts/opensans-light.woff') format('woff'),
+         url('../assets/fonts/opensans-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Open Sans Semibold */
+@font-face {
+    font-family: 'opensans_semibold';
+    src: url('../assets/fonts/opensans-semibold.woff2') format('woff2'),
+         url('../assets/fonts/opensans-semibold.woff') format('woff'),
+         url('../assets/fonts/opensans-semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* -------------------------------------------  */
+
+/* ----------------- Base ----------------- */
+:root {
+    --dark-blue: #0d0e11;
+    --dark-grey: #13161d;
+    --blue-txt: #2323d9;
+    --dark-blue-txt: #2f52ab;
+    --white: #ffffff;
+    --black: #000000;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-blue);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--dark-blue);;
+}
+/* ---------------------------------------  */
