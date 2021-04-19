@@ -78,7 +78,14 @@ a.cover-link {
 }
 .img-full,
 .img-half {
+    opacity: 0.7;
     object-fit: cover;
+    transition: transform .2s;
+}
+.img-full:hover,
+.img-half:hover {
+    opacity: 1;
+    filter: drop-shadow(2px 4px 6px black);
 }
 .img-full {
     width: 100%;
